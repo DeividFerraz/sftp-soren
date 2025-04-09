@@ -1,0 +1,32 @@
+# Ignore pasta .vs do Visual Studio
+.vs/
+
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider (caso use)
+.idea/
+
+# Configurações locais
+*.local
+*.log
+
+# Pacotes
+*.nupkg
+packages/
+
+# Arquivos temporários e cache
+*.tmp
+*.bak
+*.cache
+*.dbmdl
+
+# Diretórios de publicação
+publish/
