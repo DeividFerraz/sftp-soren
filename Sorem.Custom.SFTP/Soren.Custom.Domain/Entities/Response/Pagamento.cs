@@ -12,7 +12,6 @@ namespace Soren.Custom.Domain.Entities.Response
 
         public string NomeUsuario { get; set; }
         public string Email { get; set; }
-        public string CpfCnpj {  get; set; }
 
         public string Rua { get; set; }
         public string Numero { get; set; }
@@ -21,10 +20,11 @@ namespace Soren.Custom.Domain.Entities.Response
         public string Estado { get; set; }
         public string CEP { get; set; }
 
-        public decimal ValorDivida { get; set; }
-        public DateTime DataVencimento { get; set; }
+        public string ValorDivida { get; set; }
+        public string DataVencimento { get; set; }
 
         public string NomeCredor { get; set; }
         public string CNPJCredor { get; set; }
+        public string CpfCnpj { get; set; }
     }
 }

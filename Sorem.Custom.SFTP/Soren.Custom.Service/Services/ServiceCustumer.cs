@@ -1,14 +1,7 @@
 ﻿using Soren.Custom.Domain.DTOs.Response;
+using Soren.Custom.Domain.Entities.Response;
 using Soren.Custom.Infra.Interfaces;
 using Soren.Custom.Service.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.ConstrainedExecution;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Soren.Custom.Service.Services
 {
@@ -43,6 +36,17 @@ namespace Soren.Custom.Service.Services
             };
 
             return client;
+        }
+
+        //Não é necessario, poderia chamar o TruncateTableAsync direto. 
+        public async Task RemovePreviousBaseAsync()
+        {
+            await _repoInformacoesCliente.TruncateTableAsync();
+        }
+        //Não é necessario, poderia chamar o ImportDataAsync direto. 
+        public async Task ImImportDataAsync(List<Pagamento> data)
+        {
+            await _repoInformacoesCliente.ImImportDataAsync(data);
         }
     }
 }

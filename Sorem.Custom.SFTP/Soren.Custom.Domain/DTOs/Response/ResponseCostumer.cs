@@ -13,8 +13,8 @@
         public string Estado { get; set; }
         public string CEP { get; set; }
 
-        public decimal ValorDivida { get; set; }
-        public DateTime DataVencimento { get; set; }
+        public string ValorDivida { get; set; }
+        public string DataVencimento { get; set; }
 
         public string NomeCredor { get; set; }
         public string CNPJCredor { get; set; }

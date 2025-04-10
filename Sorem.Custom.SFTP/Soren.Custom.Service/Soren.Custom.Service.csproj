@@ -9,10 +9,12 @@
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.1.66" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.4" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Soren.Custom.Infra\Soren.Custom.Infra.csproj" />
+    <ProjectReference Include="..\Soren.Custom.Domain\Soren.Custom.Domain.csproj" />
   </ItemGroup>
 
 </Project>
